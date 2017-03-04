@@ -1,4 +1,4 @@
-package com.example.ark.myinventoryapp;
+package com.example.lavanya.dress;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -14,7 +14,7 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ark.myinventoryapp.data.ProductContract;
+import com.example.lavanya.dress.data.ProductContract;
 
 public class ProductCursorAdapter extends CursorAdapter {
 
@@ -41,9 +41,13 @@ public class ProductCursorAdapter extends CursorAdapter {
         mCursor = cursor;
         TextView nameTextView = (TextView) view.findViewById(R.id.name);
         TextView priceTextView = (TextView) view.findViewById(R.id.price);
+        TextView colorTextView = (TextView) view.findViewById(R.id.color1);
+        TextView sizeTextView = (TextView) view.findViewById(R.id.size1);
         final TextView quantityTextView = (TextView) view.findViewById(R.id.quantity);
         int nameColumnIndex = cursor.getColumnIndex(ProductContract.ProductEntry.COLUMN_PRODUCT_NAME);
         int priceColumnIndex = cursor.getColumnIndex(ProductContract.ProductEntry.COLUMN_PRODUCT_PRICE);
+        int colorColumnIndex = cursor.getColumnIndex(ProductContract.ProductEntry.COLUMN_PRODUCT_COLOR);
+        int sizeColumnIndex = cursor.getColumnIndex(ProductContract.ProductEntry.COLUMN_PRODUCT_SIZE);
         int quantityColumnIndex = cursor.getColumnIndex(ProductContract.ProductEntry.COLUMN_PRODUCT_QUANTITY);
         int itemIdIndex = cursor.getColumnIndex(ProductContract.ProductEntry._ID);
         final int itemId = cursor.getInt(itemIdIndex);
@@ -51,6 +55,8 @@ public class ProductCursorAdapter extends CursorAdapter {
         String productName = cursor.getString(nameColumnIndex);
         Integer productPrice = cursor.getInt(priceColumnIndex);
         Integer productQuantity = cursor.getInt(quantityColumnIndex);
+        String productColor = cursor.getString(colorColumnIndex);
+        Integer productSize = cursor.getInt(sizeColumnIndex);
 
 
         if (TextUtils.isEmpty(productName)) {

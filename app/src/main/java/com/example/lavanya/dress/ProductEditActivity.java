@@ -1,4 +1,4 @@
-package com.example.ark.myinventoryapp;
+package com.example.lavanya.dress;
 
 
 import android.app.Activity;
@@ -32,7 +32,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ark.myinventoryapp.data.ProductContract;
+import com.example.lavanya.dress.data.ProductContract;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -84,7 +84,7 @@ public class ProductEditActivity extends AppCompatActivity implements LoaderMana
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mTextView = (TextView) findViewById(R.id.image_uri);
+        //mTextView = (TextView) findViewById(R.id.image_uri);
         mImageView = (ImageView) findViewById(R.id.image);
         mUploadImage = (Button) findViewById(R.id.uploadButton);
 

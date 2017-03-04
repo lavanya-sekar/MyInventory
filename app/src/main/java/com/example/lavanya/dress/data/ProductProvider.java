@@ -1,4 +1,4 @@
-package com.example.ark.myinventoryapp.data;
+package com.example.lavanya.dress.data;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.util.Log;
 
-import com.example.ark.myinventoryapp.data.ProductContract.ProductEntry;
+import com.example.lavanya.dress.data.ProductContract.ProductEntry;
 
 
 /**

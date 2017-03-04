@@ -1,10 +1,10 @@
-package com.example.ark.myinventoryapp.data;
+package com.example.lavanya.dress.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.ark.myinventoryapp.data.ProductContract.ProductEntry;
+import com.example.lavanya.dress.data.ProductContract.ProductEntry;
 
 
 public class ProductDbHelper extends SQLiteOpenHelper {

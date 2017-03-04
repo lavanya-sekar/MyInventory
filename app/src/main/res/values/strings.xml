@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Inventory App - Dhara</string>
+    <string name="app_name">My Inventory </string>
     <string name="unknown_product">Unnamed Product</string>
     <string name="editor_activity_title_new_product">Add a Product</string>
     <string name="editor_activity_title_edit_product">Edit Product</string>
@@ -39,4 +39,9 @@
     <string name="button_order_product">Re-Order</string>
     <string name="list_sell">Sell</string>
     <string name="prompt_for_details">"Please fill all product details"</string>
+    <string name="size">Size</string>
+    <string name="unit_product_size">32,34,36,38 etc</string>
+    <string name="unit_product_color">Red,Blue,Green</string>
+    <string name="color">Color</string>
+
 </resources>

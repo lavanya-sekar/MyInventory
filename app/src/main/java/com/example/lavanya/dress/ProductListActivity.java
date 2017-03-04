@@ -1,4 +1,4 @@
-package com.example.ark.myinventoryapp;
+package com.example.lavanya.dress;
 
 import android.app.LoaderManager;
 import android.content.ContentUris;
@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.ark.myinventoryapp.data.ProductContract;
+import com.example.lavanya.dress.data.ProductContract;
 
 public class ProductListActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -64,7 +64,7 @@ public class ProductListActivity extends AppCompatActivity implements LoaderMana
 
     private void insertProduct() {
 
-        Uri uri = Uri.parse("android.resource://com.example.ark.myinventoryapp/drawable/murukku");
+        Uri uri = Uri.parse("android.resource://com.example.lavanya.example/drawable/murukku");
         String image_path = uri.toString().trim();
         ContentValues values = new ContentValues();
         values.put(ProductContract.ProductEntry.COLUMN_PRODUCT_NAME, "Murukku");
